@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1, h2,h3 {
+    margin: 0;
+    padding: 0
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    color: white;
+    background-image: url('./img/bg-image-nighttime.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.icon {
+    max-width: 30px;
+}
+
+.time {
+    font-size: 6.25rem;
+    font-weight: 700;
+}
+
+.quote-container {
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
+    line-height: 1.75rem;
+}
+
+.author {
+    font-weight: bold;
+}
+
+.greeting {
+    font-size: 0.938rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.188rem;
+}
+
+.icon {
+    width: 1.375rem;
+}
+
+.location {
+    font-size: 0.938rem;
+    font-weight: 500;
+    letter-spacing: 0.188rem;
+}
+
+.btn {
+    font-size: .75rem;
+    font-weight: bold;
+    letter-spacing: 3.75px;
+    text-transform: uppercase;
+}
+
+.btn-arrow {
+    width: .6rem;
+}
+
+.subtitle {
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.125rem;
+}
+
+.fetched-data {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.expanding-container {
+    background-color: black;
+}
+
+.container {
+    width: 90%;
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: .3rem .6rem;
+    border-radius: 3rem;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    border: none;
+}
+
+.btn-arrow {
+    background-color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.greeting-container {
+    display: flex;
+}
+
+.quote-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.quote-container .author {
+    flex-basis: 100%;
+}
+
+.quote {
+    flex-basis: 90%;
+}
+

@@ -131,18 +131,22 @@ img {
 }
 
 .btn {
-    padding: .3rem .6rem;
+    padding: .3rem 1rem;
     border-radius: 3rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: .5rem;
     border: none;
 }
 
 .btn-arrow {
+    display: block;
     background-color: black;
-    padding: 1rem;
-    border-radius: 1rem;
+    width: 100%;
+    aspect-ratio: 1;
+    padding: .3rem;
+    border-radius: 5rem;
 }
 
 .greeting-container {
@@ -206,9 +210,33 @@ img {
     display: none;
 }
 
+.flex {
+    display: flex;
+    align-items: baseline
+}
+
+.abbreviation {
+    font-weight: 300;
+}
+
 .greeting {
     margin-left: 1rem;
 }
+
+button,
+.quote-container .icon {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: .5rem 0;
+}
+
 
 @media (min-width: 550px){
     :root {
@@ -254,4 +282,21 @@ img {
 
 .expanded .time-btn-container {
     margin-bottom: 0;
+}
+
+.expanded .expand {
+    display: none;
+}
+
+.expanded .hide {
+    display: block;
+}
+
+.expanded .btn-arrow {
+    transform: rotateX(180deg);
+}
+
+.time-btn-container,
+.expanded > * {
+    transition: 400ms all ease-in-out;
 }

@@ -11,18 +11,18 @@
     <title>FrontendMentor - Clock app</title>
 </head>
 <body>
-    <div class="expanded wrapper night">
+    <div class="wrapper night">
         <section class="quote-container container">
             <p class="quote" id="quote-text">“The science of operations, as derived from mathematics more especially, is a science of itself, and has its own abstract truth and value.”</p>
-            <img id="fetch-quote-icon" class="icon" src="./img/icon-refresh.svg" alt="'refresh button" />
+            <img id="fetch-quote-icon" class="icon" src="./img/icon-refresh.svg" alt="new quote" aria-label="new quote button" />
             <p clas="author" id="quote-author" class="author">Ada Lovelace</p>
         </section>
         
         
         <section class="time-btn-container container">
             <section class="greeting-container">
-            <img class='icon' src="./img/icon-moon.svg" alt="" class="daytime-icon" />
-            <p class="greeting">Good evening</p>
+                <img id="daytime-icon" class="icon daytime-icon" icon src="./img/icon-moon.svg" alt="icon of moon or sun" />
+                <p id="greeting" class="greeting">Good evening</p>
             </section>
             <section class="time-container">
                 <div class="flex">
@@ -33,36 +33,36 @@
 
             </section>
             <section class='btn-container'>
-                <button id="toggle" class="btn">
+                <button id="toggle" class="btn" alt="toggle datetime container" aria-label="toggle datetime container">
                     <span class="expand">more</span>
                     <span class="hide">less</span>
                     <img class="btn-arrow" src="./img/icon-arrow-down.svg" alt="" />
-                    
                 </button>
             </section>
         </section>
         
         <section class="expanding-container">
             <div class="helper-class container">
-            <div class="data-slot">
-            <p class="subtitle">CURRENT TIMEZONE</p>
-            <p id="timezone" class="fetched-data">Europe/London</p>
-            </div>
-            <div class="data-slot">
-            <p class="subtitle">Day of the year</p>
-            <p id='day-of-year' class="fetched-data">295</p>
-            </div>
-            <div class="data-slot">
-            <p class="subtitle">Day of the week</p>
-            <p id="day-of-week" class="fetched-data">5</p>
-            </div>
-            <div class="data-slot">
-            <p class="subtitle">week number</p>
-            <p id="week-number" class="fetched-data">42</p>
-            </div>
+                <div class="data-slot">
+                    <p class="subtitle">CURRENT TIMEZONE</p>
+                    <p id="timezone" class="fetched-data">Europe/London</p>
+                </div>
+                <div class="data-slot">
+                    <p class="subtitle">Day of the year</p>
+                    <p id='day-of-year' class="fetched-data">295</p>
+                </div>
+                <div class="data-slot">
+                    <p class="subtitle">Day of the week</p>
+                    <p id="day-of-week" class="fetched-data">5</p>
+                </div>
+                <div class="data-slot">
+                    <p class="subtitle">week number</p>
+                    <p id="week-number" class="fetched-data">42</p>
+                </div>
             </div>
         </section>
     </div>
+
     <footer>Coded by <a href="https://www.github.com/benceturbluence" alt="github profile" target="_blank">benceturbulence</a> based on design of <a href="https://www.frontendmentor.io/challenges/clock-app-LMFaxFwrM/hub" alt="FrontendMentor Challange Page" target="_blank">FrontendMentor</a></footer>
 
 </body>

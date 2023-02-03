@@ -7,6 +7,8 @@ const weekNumnerElement = document.getElementById('week-number')
 const timeElement = document.getElementById('time')
 const abbrevitationElement = document.getElementById('abbreviation')
 
+const dayTimeIconElement = document.getElementById('daytime-icon')
+const greetingElement = document.getElementById('greeting')
 const wrapperElement = document.getElementsByClassName('wrapper')[0]
 
 const quoteAuthor = document.getElementById('quote-author')
@@ -32,6 +34,7 @@ const fetchIP = async () => {
     const timeString = testTime.join(':')
     
     timeElement.innerHTML = timeString
+    adjustContent(testTime[0])
 }
 
 const fetchQuote = async () => {
@@ -51,6 +54,27 @@ fetchQuote()
 
 setInterval(()=>fetchIP(), 60000)
 
-const adjustContent = () => {
-    
+const adjustContent = (hourString) => {
+
+    const hour = parseInt(hourString)
+
+    if (hour > 5 && hour < 12){
+        greetingElement.innerHTML = 'Good morning'
+        
+    }    else if ( hour < 18 ){
+        greetingElement.innerHTML = 'Good afternoon'   
+    }    else {
+        console.log('Good evening')
+        greetingElement.innerHTML = 'Good evening'
+    }
+
+    if (hour > 5 && hour < 18){
+        wrapperElement.classList.remove('night')
+        wrapperElement.classList.add('day')
+        dayTimeIconElement.src='./img/icon-sun.svg'
+    } else {
+        wrapperElement.classList.remove('day')
+        wrapperElement.classList.add('night')
+        dayTimeIconElement.src='./img/icon-moon.svg'
+    }
 }
